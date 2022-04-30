@@ -4,6 +4,7 @@ h1 {
     font-size: 28px;
     line-height: 32px;
 }
+
 h2 {
     font-family: 'Coming Soon';
     font-style: normal;
@@ -11,84 +12,96 @@ h2 {
     line-height: 24px;
     padding-bottom: 10px;
 }
+
 p {
     font-family: 'Coming Soon';
     font-style: normal;
     font-size: 22px;
     line-height: 32px;
 }
+
 div.card {
-    /* margin: auto;  */
-    margin-left: 10px; 
-    margin-right: 10px; 
-    margin-top: 50px; 
-    border-style: solid; 
-    background-color: #EDEDED; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    border-style: solid;
+    background-color: #EDEDED;
     width: auto;
     height: auto;
 }
+
 #top {
-    margin: auto; 
-    margin-left: 200px; 
-    margin-right: 200px; 
+    margin: auto;
+    margin-left: 200px;
+    margin-right: 200px;
     margin-top: 50px;
     border-style: solid;
     background-color: #EDEDED;
     width: auto
 }
-#milestone{
-    margin-top: 100px; 
-    margin-left: 80px; 
-    border-style: solid; 
-    background-color: #EDEDED; 
+
+#milestone {
+    margin-top: 100px;
+    margin-left: 80px;
+    border-style: solid;
+    background-color: #EDEDED;
     max-width: 150px;
 }
+
 div.achiev {
-    display: inline-block; 
-    position:relative; 
-    border-style: solid; 
-    border-color: #54DD69; 
-    background-color: #87FF8B; 
+    display: inline-block;
+    position: relative;
+    border-style: solid;
+    border-color: #54DD69;
+    background-color: #87FF8B;
     width: 300px
 }
+
 div.rt {
-    display: inline-block; 
-    position:relative; 
-    border-style: solid; 
-    border-color: #8257A7; 
-    background-color: #A379C980; 
+    display: inline-block;
+    position: relative;
+    border-style: solid;
+    border-color: #8257A7;
+    background-color: #A379C980;
     width: 300px;
     height: auto;
 }
+
 div.one {
     left: 100px;
 }
+
 div.two {
     left: 250px;
 }
+
 div.three {
     left: 400px;
 }
+
 div.card-body {
-    padding: 10px; 
+    padding: 10px;
     text-align: center;
 }
+
 div.ach {
     padding: 30px;
 }
+
 #recType {
-    margin-top: 100px; 
-    margin-left: 80px; 
-    border-style: solid; 
-    background-color: #EDEDED; 
+    margin-top: 100px;
+    margin-left: 80px;
+    border-style: solid;
+    background-color: #EDEDED;
     max-width: 200px;
 }
+
 p.card-text {
     text-align: center;
 }
 
 p.header {
-    font-size: 80px; 
+    font-size: 80px;
     padding-top: 15px;
     font-size: 60px;
 }
@@ -96,24 +109,33 @@ p.header {
 hr.one {
     border-color: #54DD69
 }
+
 hr.two {
     border-color: #8257A7
 }
 
 img {
-    width:100px; 
-    position:relative; 
+    width: 100px;
+    position: relative;
     align-self: center;
     padding-top: auto;
     padding-bottom: auto;
 }
+
 img.notSoup {
     padding-top: 18px;
 }
+
 button {
     font-family: 'Coming Soon';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
+}
+
+button.toAll {
+    background-color: #C59BEB;
+    padding: 10px;
+    width: 50%;
 }
