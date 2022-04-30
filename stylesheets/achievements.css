@@ -36,3 +36,77 @@ div.card {
     background-color: #EDEDED;
     width: auto
 }
+#milestone{
+    margin-top: 100px; 
+    margin-left: 80px; 
+    border-style: solid; 
+    background-color: #EDEDED; 
+    max-width: 150px;
+}
+div.achiev {
+    display: inline-block; 
+    position:relative; 
+    border-style: solid; 
+    border-color: #54DD69; 
+    background-color: #87FF8B; 
+    width: 300px
+}
+div.rt {
+    display: inline-block; 
+    position:relative; 
+    border-style: solid; 
+    border-color: #8257A7; 
+    background-color: #A379C980; 
+    width: 300px;
+    height: auto;
+}
+div.one {
+    left: 100px;
+}
+div.two {
+    left: 250px;
+}
+div.three {
+    left: 400px;
+}
+div.card-body {
+    padding: 10px; 
+    text-align: center;
+}
+div.ach {
+    padding: 30px;
+}
+#recType {
+    margin-top: 100px; 
+    margin-left: 80px; 
+    border-style: solid; 
+    background-color: #EDEDED; 
+    max-width: 200px;
+}
+p.card-text {
+    text-align: center;
+}
+
+p.header {
+    font-size: 80px; 
+    padding-top: 15px;
+    font-size: 60px;
+}
+
+hr.one {
+    border-color: #54DD69
+}
+hr.two {
+    border-color: #8257A7
+}
+
+img {
+    width:100px; 
+    position:relative; 
+    align-self: center;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+img.notSoup {
+    padding-top: 18px;
+}
