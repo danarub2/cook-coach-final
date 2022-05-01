@@ -1,4 +1,11 @@
 
+#backgroundImage {
+  background-image: url(../images/cookbook-bg.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
 .speech-bubble {
   position: relative;
   margin: .5em auto;
@@ -30,6 +37,7 @@
 } 
 
 .cookbookContent {
+  background-color: #C59BEB;
   position: absolute;
   top: 45%;
   left: 43%;
@@ -47,7 +55,7 @@
   border: 1px solid black;
   width: 100%;
   display: flex;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .pastaInfo {
@@ -61,7 +69,7 @@
   display: flex;
 }
 
-.editRecord {
+#editRecord, #stopEdit {
   display: flex;
   align-items: center;
   height: 8vh;
@@ -69,4 +77,42 @@
   position: absolute;
   left: 85%;
   top: 70%;
+  background: inherit;
+  border: none;
+}
+
+#stopEdit {
+  visibility: visible;
+
+}
+
+#editRecord {
+  visibility: hidden;
+}
+
+.cookyContainer {
+  position: absolute;
+  top: 525px;
+  left: 950px;
+}
+
+.notesContainer {
+  width: 70%;
+}
+
+#pastaNotes{
+  background: white;
+  margin-left: .5%;
+  width: 40%;
+  height: 8vh;
+  border: 1px solid black;
+  border-radius:10px;
+  visibility: visible;
+  position: absolute;
+  top: 38%;
+  left: 47%;
+}
+
+#pastaNoteText {
+  visibility: hidden;
 }
