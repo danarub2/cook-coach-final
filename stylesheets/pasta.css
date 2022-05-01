@@ -1,0 +1,121 @@
+h3 {
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 92px;
+}
+
+h1 {
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+}
+p {
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+img {
+    display: inline-block; 
+    position: absolute; 
+    top: 10px; 
+    right: 300px; 
+    width: 200px
+
+}
+
+ul {
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+button {
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    position: relative; 
+    background-color: #C59BEB;
+}
+#next {
+    width: 100px;
+    background-color: #C59BEB;
+}
+button.btn {
+    width: 40px;
+    height: 40px;
+    background-color: #C59BEB;
+}
+
+.servings {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+span.tab {
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    margin-left: 50px;
+}
+
+div.Left {
+    float: left;
+}
+
+div.LeftTwo {
+    position: relative; 
+    left: 100px; 
+    float:left;
+}
+#nextButton {
+    position: relative; 
+    margin-left: 300px
+}
+
+div.mar {
+    margin-left: 50px
+}
+
+button.minus {
+    background-color: #FF0000;
+    margin-left: 100px;
+}
+
+button.plus {
+    background-color: #87FF8B;
+}
+
+p.num {
+    padding-left: 10px;
+    padding-right: 10px; 
+    font-size: 32px;
+}
+
+div.popover {
+    align-content: center;
+}
+
+iframe {
+    resize: both;
+}
+
+li {
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-size: 28px;
+    line-height: 32px;
+}
