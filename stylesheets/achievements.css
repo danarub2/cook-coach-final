@@ -1,21 +1,21 @@
 h1 {
-    font-family: 'Coming Soon';
-    font-style: normal;
+    /* font-family: 'Coming Soon'; */
+    font-family: 'Comfortaa';
     font-size: 28px;
     line-height: 32px;
 }
 
 h2 {
-    font-family: 'Coming Soon';
-    font-style: normal;
+    /* font-family: 'Coming Soon'; */
+    font-family: 'Comfortaa';
     font-size: 24px;
     line-height: 24px;
     padding-bottom: 10px;
 }
 
 p {
-    font-family: 'Coming Soon';
-    font-style: normal;
+    /* font-family: 'Coming Soon'; */
+    font-family: 'Comfortaa';
     font-size: 22px;
     line-height: 32px;
 }
@@ -37,7 +37,8 @@ div.card {
     margin-top: 50px;
     border-style: solid;
     background-color: #EDEDED;
-    width: auto
+    width: auto;
+    border-radius: 40px;
 }
 
 #milestone {
@@ -46,6 +47,7 @@ div.card {
     border-style: solid;
     background-color: #EDEDED;
     max-width: 150px;
+    border-radius: 40px;
 }
 
 div.achiev {
@@ -54,7 +56,8 @@ div.achiev {
     border-style: solid;
     border-color: #54DD69;
     background-color: #87FF8B;
-    width: 300px
+    width: 300px;
+    border-radius: 40px;
 }
 
 div.rt {
@@ -65,6 +68,7 @@ div.rt {
     background-color: #A379C980;
     width: 300px;
     height: auto;
+    border-radius: 40px;
 }
 
 div.one {
@@ -93,7 +97,8 @@ div.compl {
     border-style: solid; 
     border-color: #22AABB; 
     background-color: #22AABB80; 
-    width: 300px
+    width: 300px;
+    border-radius: 40px;
 }
 
 #recType {
@@ -102,16 +107,19 @@ div.compl {
     border-style: solid;
     background-color: #EDEDED;
     max-width: 200px;
+    border-radius: 40px;
 }
 
 p.card-text {
     text-align: center;
+    font-family: 'Comfortaa';
 }
 
 p.header {
     font-size: 80px;
     padding-top: 15px;
     font-size: 60px;
+    font-family: 'Comfortaa';
 }
 
 hr.one {
@@ -139,11 +147,11 @@ img.notSoup {
 }
 
 button {
-    font-family: 'Coming Soon';
-    font-style: normal;
-    font-weight: 400;
+    /* font-family: 'Coming Soon'; */
+    font-family: 'Comfortaa';
     font-size: 20px;
     line-height: 20px;
+    border-radius: 40px;
 }
 
 button.toAll {
@@ -151,36 +159,58 @@ button.toAll {
     padding: 10px;
     width: 50%;
 }
-button.back {
+/* button.back {
     background-color: #C59BEB; 
     padding: 10px; 
     padding-right: 150px; 
     width: auto; 
     position: absolute; 
     margin-top: 275px
-}
+} */
 
-.speech-bubble {
-    background: #efefef;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    line-height: 1.3;
-    max-width: 500px;
-    padding: 15px;
+.bubble {
     position: relative;
-    left: 10px;
-    width: 50%; 
-    position: relative; 
-    left: 30%;
-
-} .speech-bubble::after {
-        border-left: 20px solid transparent;
-        border-top: 20px solid #efefef;
-        bottom: -20px;
-        content: "";
-        position: absolute;
-        right: 20px;
+    font-family: sans-serif;
+    font-size: 1.65vw;
+    width: 30vw;
+    height: 20vh;
+    background: #EFEFEF;
+    border-radius: 40px;
+    padding: 1.5vw;
+    text-align: center;
+    color: #000;
+    position: relative;
+    left: 35vw;
+    top: 4vh;
 }
+  
+.bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #EFEFEF;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #EFEFEF;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+}
+
+.bubble-bottom-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #EFEFEF;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #EFEFEF;
+    border-bottom: 20px solid transparent;
+    left: 25vw;
+    bottom: -4vh;
+    transform: rotate(90deg);
+}
+  
 img.cookie {
     display: inline-block; 
     width: 30%; 
