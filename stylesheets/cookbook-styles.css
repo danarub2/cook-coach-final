@@ -116,3 +116,102 @@
 #pastaNoteText {
   visibility: hidden;
 }
+
+#editPhoto {
+  background: none;
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  border: none;
+  visibility: visible;
+}
+
+#pastaPicture {
+  visibility: hidden;
+  width: 558px;
+  height: 416px;
+  background: rgba(135, 255, 139, 1);
+  opacity: 1;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.popupInstructions {
+  width: auto;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  margin-top: 25%;
+  left: 15%;
+  font-family: Comfortaa;
+  font-weight: Regular;
+  font-size: 35px;
+  opacity: 1;
+}
+
+.popupTitle {
+  width: auto;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 23px;
+  left: 27px;
+  font-family: Comfortaa;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: left;
+}
+
+.or {
+  width: 40px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 284px;
+  left: 80px;
+  font-family: Comfortaa;
+  font-weight: Regular;
+  font-size: 35px;
+  opacity: 1;
+  text-align: left;
+}
+
+.chooseFileButton,
+.confirmButton {
+  width: 273px;
+  height: 71px;
+  background: rgba(196, 196, 196, 1);
+  opacity: 1;
+  position: absolute;
+  top: 265px;
+  left: 142px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  font-family: Comfortaa;
+  font-weight: Regular;
+  font-size: 35px;
+  opacity: 1;
+}
+
+.exitButton {
+  width: 33px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 2%;
+  left: 90%;
+  font-family: Comfortaa;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: left;
+}
+
+.closeButton {
+  background: rgba(135, 255, 139, 1);
+  border: none;
+}

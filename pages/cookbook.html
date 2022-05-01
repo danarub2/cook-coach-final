@@ -29,6 +29,10 @@
                 <div class="pastaImage">
                     <img src='../images/pasta.png' alt='pasta' height='200vw' width='250vw' padding='2%' />
                 </div>
+                <button id="editPhoto" onclick="editPhoto()">
+                    <img src="../images/camera.png" alt="edit photo" height='180vw' width='180vw' padding='2%' />
+                </button>
+
 
                 <div class="pastaInfo">
                     <h2>Simple Pasta</h2>
@@ -59,6 +63,20 @@
         </div>
         <div class="cookyContainer" style="left: 850px;">
             <img src="../images/cooky_transparent.png" alt="Cooky" height="250vh" width="300vw" />
+        </div>
+
+        <div class="popupText" id="pastaPicture">
+            <h1 class="popupTitle">Change Picture</h1>
+            <span class="popupInstructions">Drop a file(JPG, PNG)</span>
+            <span class="or">or</span>
+
+            <div class="fileButton">
+                <button class="chooseFileButton">Choose a file...</button>
+            </div>
+
+            <span class="exitButton">
+                <button class="closeButton" onclick="closeSetting()">X</button>
+            </span>
         </div>
     </div>
 </body>
