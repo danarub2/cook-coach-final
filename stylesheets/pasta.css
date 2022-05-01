@@ -110,7 +110,7 @@ div.popover {
 }
 
 iframe {
-    min-height: fit-content;
+    resize: both;
 }
 
 li {
