@@ -13,6 +13,15 @@ h1 {
     font-size: 32px;
     line-height: 35px;
 }
+
+h4 {
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-weight: 400;
+}
+
 p {
     font-family: 'Coming Soon';
     font-style: normal;
@@ -21,12 +30,11 @@ p {
 }
 
 img {
-    display: inline-block; 
-    position: absolute; 
-    top: 10px; 
-    right: 300px; 
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 300px;
     width: 200px
-
 }
 
 ul {
@@ -43,13 +51,15 @@ button {
     font-weight: 400;
     font-size: 40px;
     line-height: 49px;
-    position: relative; 
+    position: relative;
     background-color: #C59BEB;
 }
+
 #next {
     width: 100px;
     background-color: #C59BEB;
 }
+
 button.btn {
     width: 40px;
     height: 40px;
@@ -77,12 +87,13 @@ div.Left {
 }
 
 div.LeftTwo {
-    position: relative; 
-    left: 100px; 
-    float:left;
+    position: relative;
+    left: 100px;
+    float: left;
 }
+
 #nextButton {
-    position: relative; 
+    position: relative;
     margin-left: 300px
 }
 
@@ -101,7 +112,7 @@ button.plus {
 
 p.num {
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
     font-size: 32px;
 }
 
@@ -118,4 +129,18 @@ li {
     font-style: normal;
     font-size: 28px;
     line-height: 32px;
+}
+
+span.tab {
+    margin-left: 40px;
+}
+
+#video {
+    max-width: 100%;
+}
+
+.DoneButton {
+    position: absolute;
+    padding-right: 50px;
+    right: 10%;
 }
