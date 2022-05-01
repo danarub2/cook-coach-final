@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Starting Pasta Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../stylesheets/pasta.css">
+    <script src="../scripts/startPasta.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <div style="display: flex;">
+            <h3 style="display: inline-block;">Simple Pasta</h3>
+            <img src="../images/pastaIcon.png" alt="pastaImage">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="Left">
+            <div>
+                <h3>Servings</h3>
+                <div class="mar">
+                    <button type="button" class="servings minus" style="display: inline-block;"
+                        onclick="onClickBack()">-</button>
+                    <p class="num" style="display: inline-block;"><span id="clicks">1</span></p>
+                    <button class="servings plus" type="button" style="display: inline-block;"
+                        onclick="onClick()">+</button>
+                </div>
+
+            </div>
+
+            <div>
+                <h3>Substitution Options</h3>
+                <div class="mar">
+                    <div>
+                        <button type="button" class="btn btn-primary
+                            dropdown-toggle" data-toggle="collapse" data-target="#salt"><span
+                                class="caret"></span></button>
+                        <h1 style="display:inline-block;">salt</h1>
+                        <div id="salt" class="collapse">
+                            <p><span class="tab" style="display: inline-block;"></span>Remove</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="button" class="btn btn-primary
+                            dropdown-toggle" data-toggle="collapse" data-target="#cheese"><span
+                                class="caret"></span></button>
+                        <h1 style="display:inline-block;">cheese</h1>
+                        <div id="cheese" class="collapse">
+                            <p><span class="tab" style="display: inline-block;"></span>Remove</p>
+                            <p><span class="tab" style="display: inline-block;"></span>Vegan cheese</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="button" class="btn btn-primary
+                            dropdown-toggle" data-toggle="collapse" data-target="#basil"><span
+                                class="caret"></span></button>
+                        <h1 style="display:inline-block;">basil</h1>
+                        <div id="basil" class="collapse">
+                            <p><span class="tab" style="display: inline-block;"></span>Remove</p>
+                            <p><span class="tab" style="display: inline-block;"></span>Oregano</p>
+                            <p><span class="tab" style="display: inline-block;"></span>Spinach</p>
+                            <p><span class="tab" style="display: inline-block;"></span>Italian Seasoning</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="button" class="btn btn-primary
+                            dropdown-toggle" data-toggle="collapse" data-target="#rpf"><span
+                                class="caret"></span></button>
+                        <h1 style="display:inline-block;">red pepper flakes</h1>
+                        <div id="rpf" class="collapse">
+                            <p><span class="tab" style="display: inline-block;"></span>Remove</p>
+                            <p><span class="tab" style="display: inline-block;"></span>Cayenne Pepper Powder</p>
+                            <p><span class="tab" style="display: inline-block;"></span>Chipotle Powder</p>
+                            <p><span class="tab" style="display: inline-block;"></span>Chili Powder</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="LeftTwo">
+            <div>
+                <h3>Ingredients</h3>
+                <div class="mar">
+                    <ol>
+                        <li>
+                            <p style="display: inline-block;"><span id="pastaAmt">0.25</span></p> box of pasta
+                        </li>
+                        <li>
+                            <p style="display: inline-block;"><span id="sauceAmt">0.25</span></p> jar of pasta sauce
+                        </li>
+                        <li>salt</li>
+                        <li>Optional garnishes:</li>
+                        <ol>
+                            <li>grated cheese</li>
+                            <li>basil</li>
+                            <li>red pepper flakes</li>
+                        </ol>
+                    </ol>
+                </div>
+            </div>
+
+            <div>
+                <h3>Materials</h3>
+                <div class="mar">
+                    <ol>
+                        <!-- add hover images -->
+                        <li><a type="button" @click="togglePanel" data-toggle="collapse" data-target="#largePot">large
+                                pot (6-8 quarts)</a></li>
+                        <li><a type="button" @click="togglePanel" data-toggle="collapse" data-target="#saucePan">sauce
+                                pan</a></li>
+                        <li><a type="button" @click="togglePanel" data-toggle="collapse" data-target="#spoon">large
+                                cooking spoon</a></li>
+                        <li><a type="button" @click="togglePanel" data-toggle="collapse"
+                                data-target="#colander">colander</a></li>
+                    </ol>
+
+                    <div height="100%" width="100%" id="largePot" class="popover">
+                        <iframe height="100%" width="100%" src="../images/largePot.png" allowfullscreen title="pot"></iframe>
+                    </div>
+
+                    <div height="100%" width="100%" id="saucePan" class="popover">
+                        <iframe height="100%" width="100%" src="../images/saucePan.png" allowfullscreen title="pan"></iframe>
+                    </div>
+
+                    <div height="100%" width="100%" id="spoon" class="popover">
+                        <iframe height="100%" width="100%" src="../images/spoon.png" allowfullscreen title="spoon"></iframe>
+                    </div>
+
+                    <div height="100%" width="100%" id="colander" class="popover">
+                        <iframe height="100%" width="100%" src="../images/colander.png" allowfullscreen title="colander"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+            <br>
+            <div id="nextButton">
+                <button id="next" type="button" onclick="window.location.href='pastaMain.html'">Next</button>
+                <!-- might need to edit connection for react -->
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
