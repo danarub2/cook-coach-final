@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="../stylesheets/dana_styles.css" />
     <link rel="stylesheet" href="../stylesheets/kitchen.css">
     <!-- Navbar style sheet is below -->
     <link rel="stylesheet" href="../stylesheets/nav_bar.css">
@@ -18,34 +18,42 @@
 
 <body>
     <!-- Navbar starts here -->
-        <!-- Make sure to add nav_bar.css, and to make the link that show your current page have the class "active"-->
-        <div class="nav-wrapper">
-            <ul class="nav-bar">
-                <li class="nav-item">
-                    <a class="nav-link active" href="my_kitchen.html">My Kitchen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="recipes.html">Recipes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cookbook_empty.html">My Cookbook</a>
-                    <!-- fix link -->
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="shop.html">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="achievements.html">Achievements</a>
-                    <!-- fix link -->
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><img class="nav-icon" src="../images/user-icon.png" alt="profile" href=""></a>
-                </li>
-            </ul>
-        </div>
-        <!-- Navbar ends here -->
+    <!-- Navbar for new user -->
+    <!-- Make sure to add nav_bar.css, and to make the link that show your current page have the class "active"-->
+    <div class="nav-wrapper">
+        <ul class="nav-bar">
+            <li class="nav-item">
+                <a class="nav-link active" href="my_kitchen.html">My Kitchen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="recipes.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cookbook-empty.html">My Cookbook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="achievements.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html"><img class="nav-icon" src="../images/user-icon.png"></img></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Navbar ends here -->
 
-    <!-- ADD progress bar -->
+    <!-- Empty Xpbar + coins starts here -->
+    <div class="bg-cc-grey comfortaa-font"style="margin-top: 0.5vw; margin-left: 1vw; border-radius: 10px; width: 97.5vw; height: 2vw; border: thin solid black">
+        <label style="float: right; margin-right: 1vw; margin-top: 0.25vw">0/500 XP</label>
+        <label style="float: right; margin-right: 2vw; margin-top: 0.25vw">Level 1</label>
+    </div>
+    <div style="margin-right: 1.5vw">
+        <img src = "../images/coin.png" alt="coin" id="coins" style="float: right; width: 25px; margin-top: 1vw; margin-left: 0.5vw"></img>
+        <label style="float: right; margin-top: 1vw">0</label>
+    </div>
+    <!-- Xpbar ends here -->
 
     <div class="kitchen imgbox">
         <img class="center-fit" src="../images/kitchenBackground.png" alt="kitchen background" usemap="#kitchenBack">
