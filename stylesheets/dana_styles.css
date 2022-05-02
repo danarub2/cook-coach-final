@@ -102,7 +102,6 @@
     width: 25vw;
 }
 
-
 #cooky-looking-left{
     height: auto;
     width: 25vw;
@@ -112,8 +111,31 @@
     transform: scaleX(-1)
 }
 
+#applied-filters-div{
+    margin-top: 2vw;
+}
+
+.applied-filter{
+    margin-right: 1vw;
+    border: thin solid black;
+    background-color: #EFEFEF;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 0.9vw;
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+
+.x-button{
+    width: 10px;
+}
+
 .hidden{
-    display: none
+    display: none;
 }
 /* Speech Bubble */
 

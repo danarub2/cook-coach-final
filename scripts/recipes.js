@@ -1,3 +1,5 @@
+active_filters = []
+
 function onShuffle(){
     if (document.getElementById("recipe-1-title").innerHTML == "Eggs and Bacon"){
         document.getElementById("recipe-1-title").innerHTML = "Tacos"
@@ -38,9 +40,61 @@ function onShuffle(){
 function onOpenFilter(){
     document.getElementById("filter-options").setAttribute("class", "bg-cc-grey")
     document.getElementById("filter-plus-holder").setAttribute("class", "hidden")
+    document.getElementById("applied-filters-div").setAttribute("class", "hidden")
+
 }
 
 function onCloseFilter(){
     document.getElementById("filter-options").setAttribute("class", "hidden")
     document.getElementById("filter-plus-holder").setAttribute("class", "bg-cc-grey")
+
+}
+
+function addFilter(name){
+    if (active_filters.includes(name)){
+        active_filters.splice(active_filters.indexOf(name), 1)
+    }
+    else{
+        active_filters.push(name)
+    }
+    console.log(active_filters)
+}
+
+function removeFilter(){
+    n="Under 15 minutes"
+    active_filters.splice(active_filters.indexOf(n), 1)
+    console.log(active_filters)
+    showFilters()
+}
+
+function showFilters(){
+    onCloseFilter()
+    active_filters = active_filters.filter(function (value, index, array) { 
+        return array.indexOf(value) === index;
+    });
+    
+    document.getElementById("applied-filters-div").innerHTML = ""
+    document.getElementById("applied-filters-div").setAttribute("class", "")
+
+    for (let i = 0; i < active_filters.length; i++) {
+        label_name = "<label>" + active_filters[i] + "</label>"
+        img = "<img src='../images/x-button.png' class='x-button' style='margin-left: 10px; margin-bottom: 3px' onclick=\"removeFilter(" + active_filters[i] + ")\""
+        console.log("<div class='applied-filter'>" + label_name + img + "</div>")
+        document.getElementById("applied-filters-div").innerHTML += "<div class='applied-filter'>" + label_name + img + "</div>"
+    }
+}
+
+function search(){
+    term = document.getElementById("search").value
+    const collection = document.getElementsByClassName("recipe-card");
+
+    console.log(collection.length)
+    for (let i = 0; i < collection.length; i++) {
+        current_recipe = collection[i].getElementsByClassName("recipe-name")[0].innerHTML
+        console.log(current_recipe)
+        console.log(term)
+        if (!current_recipe.toUpperCase().includes(term.toUpperCase())){
+            collection[i].setAttribute("class", "hidden")
+        }
+    }
 }
