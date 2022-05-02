@@ -57,6 +57,7 @@
 
 .eggs-photo{
     width: 250px;
+    margin-top: 1vw;
 }
 
 .pasta-photo{
@@ -75,6 +76,10 @@
 
 .beans-and-rice-photo{
     width: 250px;
+}
+
+.spaghetti-photo{
+    width: 225px;
 }
 
 .baked-potato-photo{
