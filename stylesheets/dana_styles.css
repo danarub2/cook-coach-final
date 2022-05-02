@@ -50,12 +50,71 @@
     margin-right: 5vw;
 }
 
+#recipes{
+    margin-top: 4vw;
+    margin-left: 5vw;
+}
+
+.eggs-photo{
+    width: 250px;
+}
+
+.pasta-photo{
+    width: 215px;
+    margin-top: 1vw;
+}
+
+.tacos-photo{
+    width: 250px;
+    margin-top: 2vw;
+}
+
+.hamburger-photo{
+    width: 250px;
+}
+
+.beans-and-rice-photo{
+    width: 250px;
+}
+
+.baked-potato-photo{
+    margin-top: 1vw;
+    width: 265px;
+}
+
+#shuffle-button{
+    margin-top: 4vw;
+    margin-left: 68.25vw;
+}
+
+
+.recipe-title{
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+
+.track-card{
+    border: thin solid black;
+    border-radius: 10px;
+    padding-top: 2vw;
+    margin-left: 2vw;
+    margin-right: 4vw;
+    width: 25vw;
+}
+
 
 #cooky-looking-left{
     height: auto;
     width: 25vw;
 }
 
+#cooky-looking-right{
+    transform: scaleX(-1)
+}
+
+.hidden{
+    display: none
+}
 /* Speech Bubble */
 
 .bubble {
