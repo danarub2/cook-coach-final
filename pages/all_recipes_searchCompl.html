@@ -12,51 +12,52 @@
 
     </head>
     <body>
-            <!-- Navbar starts here -->
-            <!-- Navbar for Completed first recipe -->
-            <div class="nav-wrapper">
-                <ul class="nav-bar">
-                    <li class="nav-item">
-                        <a class="nav-link" href="my_kitchenCompl.html">My Kitchen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="recipesCompl.html">Recipes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cookbook.html">My Cookbook</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shopCompl.html">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="achievementsCompl.html">Achievements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="profileCompl.html"><img class="nav-icon" src="../images/user-icon.png"></img></a>
-                    </li>
-                </ul>
+        <!-- Navbar starts here -->
+        <!-- Navbar for new user -->
+        <!-- Make sure to add nav_bar.css, and to make the link that show your current page have the class "active"-->
+        <div class="nav-wrapper">
+            <ul class="nav-bar">
+                <li class="nav-item">
+                    <a class="nav-link" href="my_kitchenCompl.html">My Kitchen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="recipesCompl.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cookbook.html">My Cookbook</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopCompl.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="achievementsCompl.html">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profileCompl.html"><img class="nav-icon" src="../images/user-icon.png"></img></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Navbar ends here -->
+        <div class="bg-cc-green row" style="font-size: 1.15vw">
+            <div class="col-6 text-center" style="border-right: thin solid black; padding: 0.75vw">
+                <a href="recipesCompl.html" style="text-decoration: none; color: black">My Progress Track</a>
             </div>
-            <!-- Navbar ends here -->
-            <div class="bg-cc-green row" style="font-size: 1.15vw">
-                <div class="col-6 text-center" style="border-right: thin solid black; padding: 0.75vw">
-                    <a href="recipesCompl.html" style="text-decoration: none; color: black">My Progress Track</a>
-                </div>
-                <div class="col-6 text-center" style="padding: 0.75vw">
-                    <a href="all_recipes_startCompl.html" style="text-decoration: underline; color: black">All Recipes</a>
-                </div>
+            <div class="col-6 text-center" style="padding: 0.75vw">
+                <a href="all_recipes_startCompl.html" style="text-decoration: underline; color: black">All Recipes</a>
             </div>
-            <!-- Filled Xpbar starts here -->
-            <div class="bg-cc-grey comfortaa-font"style="margin-top: 0.5vw; margin-left: 1vw; border-radius: 10px; width: 97.5vw; height: 2vw; border: thin solid black; background: linear-gradient(90deg, #87FF8B 50%, #C4C4C4 50%)">
-                <label style="float: right; margin-right: 1vw; margin-top: 0.25vw">250/500 XP</label>
-                <label style="float: right; margin-right: 2vw; margin-top: 0.25vw">Level 2</label>
-            </div>
-            <div style="margin-right: 1.5vw">
-                <img src = "../images/coin.png" alt="coin" id="coins" style="float: right; width: 25px; margin-top: 1vw; margin-left: 0.5vw"></img>
-                <label style="float: right; margin-top: 1vw">100</label>
-            </div>
-            <!-- Xpbar ends here -->
+        </div>
+        <!-- Filled Xpbar starts here -->
+        <div class="bg-cc-grey comfortaa-font"style="margin-top: 0.5vw; margin-left: 1vw; border-radius: 10px; width: 97.5vw; height: 2vw; border: thin solid black; background: linear-gradient(90deg, #87FF8B 50%, #C4C4C4 50%)">
+            <label style="float: right; margin-right: 1vw; margin-top: 0.25vw">250/500 XP</label>
+            <label style="float: right; margin-right: 2vw; margin-top: 0.25vw">Level 2</label>
+        </div>
+        <div style="margin-right: 1.5vw">
+            <img src = "../images/coin.png" alt="coin" id="coins" style="float: right; width: 25px; margin-top: 1vw; margin-left: 0.5vw"></img>
+            <label style="float: right; margin-top: 1vw">100</label>
+        </div>
+        <!-- Xpbar ends here -->
             <div class="form" style="margin-top: 3vw; margin-left: 4vw">
-                <input class="form-input" name="search" type="input" id="search" placeholder="Type to search" style="border-radius: 10px; border: thin solid black;  width: 85vw; height: 50px; padding: 10px">
+                <input class="form-input" name="search" type="input" id="search" placeholder="Tofu" style="border-radius: 10px; border: thin solid black;  width: 85vw; height: 50px; padding: 10px">
                     <a href="all_recipes_searchCompl.html"><button type="submit" id="search-button" class="btn bg-cc-blue black-border" style="width: 7vw; margin-bottom: 0.5vw; margin-left: 0.25 vw">Search</button></a>
                 </input>
             </div>
@@ -162,93 +163,6 @@
                     <div class="row">
                         <div class="col-7">
                             <div class="bg-white" style="border-radius: 10px; border: thin solid black">
-                                <img src="../images/chili.png" alt="chili" id="chili" style="width: 200px; margin-left: -0.25vw"></img>
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Chili</p>
-                                <p>Prep Time: 5 minutes</p>
-                                <p>Total Time: 30 minutes</p>
-                                <p>Difficulty: Easy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 recipe-card">
-                    <div class="row">
-                        <div class="col-7">
-                            <div class="bg-white" style="border-radius: 10px; border: thin solid black">
-                                <img src="../images/fajitas.png" alt="fajitas" id="fajitas" style="width: 200px; margin-left: -0.25vw"></img>
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Steak Fajitas</p>
-                                <p>Prep Time: 20 minutes</p>
-                                <p>Total Time: 1 hour</p>
-                                <p>Difficulty: Easy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 recipe-card">
-                    <div class="row">
-                        <div class="col-7">
-                            <div class="bg-white" style="border-radius: 10px; border: thin solid black">
-                                <img src="../images/soup.png" alt="soup" id="soup" style="width: 175px; margin-left: 0.75vw"></img>
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Minestrone Soup</p>
-                                <p>Prep Time: 5 minutes</p>
-                                <p>Total Time: 30 minutes</p>
-                                <p>Difficulty: Easy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin: 4vw">
-                <div class="col-md-4 recipe-card">
-                    <div class="row">
-                        <div class="col-7">
-                            <div class="bg-white" style="border-radius: 10px; border: thin solid black">
-                                <img src="../images/meatballs.png" alt="meatballs" id="meatballs" style="width: 200px; margin-left: -0.25vw"></img>
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Meatless Meatballs</p>
-                                <p>Prep Time: 10 minutes</p>
-                                <p>Total Time: 25 minutes</p>
-                                <p>Difficulty: Easy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 recipe-card">
-                    <div class="row">
-                        <div class="col-7">
-                            <div class="bg-white" style="border-radius: 10px; border: thin solid black">
-                                <img src="../images/salmon.png" alt="salmon" id="salmon" style="width: 210px; margin-left: -0.75vw"></img>
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Grilled Salmon</p>
-                                <p>Prep Time: 45 minutes</p>
-                                <p>Total Time: 1 hour</p>
-                                <p>Difficulty: Medium</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 recipe-card">
-                    <div class="row">
-                        <div class="col-7">
-                            <div class="bg-white" style="border-radius: 10px; border: thin solid black">
                                 <img src="../images/curry.png" alt="curry" id="curry" style="width: 210px; margin-left: -0.75vw"></img>
                             </div>
                         </div>
@@ -258,25 +172,6 @@
                                 <p>Prep Time: 10 minutes</p>
                                 <p>Total Time: 25 minutes</p>
                                 <p>Difficulty: Medium</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin: 4vw">
-                <div class="col-md-4 recipe-card">
-                    <div class="row">
-                        <div class="col-7">
-                            <div class="bg-white" style="border-radius: 10px; border: thin solid black">
-                                <img src="../images/grilled_cheese.png" alt="grilled cheese" id="grilled cheese" style="width: 200px; margin-left: -0.25vw"></img>
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Grilled Cheese and Tomato Soup</p>
-                                <p>Prep Time: 20 minutes</p>
-                                <p>Total Time: 1 hour</p>
-                                <p>Difficulty: Easy</p>
                             </div>
                         </div>
                     </div>
@@ -315,7 +210,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     

@@ -49,6 +49,7 @@
   margin: 2%;
   border-radius: 20px;
   border: 1px solid black;
+  opacity: .7;
 }
 
 .pastaRecord {
