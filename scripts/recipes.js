@@ -1,6 +1,6 @@
 active_filters = []
 
-function onShuffle(){
+function onShuffle(comp){
     if (document.getElementById("recipe-1-title").innerHTML == "Eggs and Bacon"){
         document.getElementById("recipe-1-title").innerHTML = "Tacos"
         document.getElementById("recipe-1-photo").setAttribute("src", "../images/tacos.png")
@@ -24,11 +24,18 @@ function onShuffle(){
         document.getElementById("recipe-1-photo").setAttribute("alt", "Eggs and Bacon")
         document.getElementById("recipe-1-photo").setAttribute("class", "eggs-photo")
 
-
-        document.getElementById("recipe-2-title").innerHTML = "Simple Pasta"
-        document.getElementById("recipe-2-photo").setAttribute("src", "../images/pasta.png")
-        document.getElementById("recipe-2-photo").setAttribute("alt", "Simple Pasta")
-        document.getElementById("recipe-2-photo").setAttribute("class", "pasta-photo")
+        if (comp == false){
+            document.getElementById("recipe-2-title").innerHTML = "Simple Pasta"
+            document.getElementById("recipe-2-photo").setAttribute("src", "../images/pasta.png")
+            document.getElementById("recipe-2-photo").setAttribute("alt", "Simple Pasta")
+            document.getElementById("recipe-2-photo").setAttribute("class", "pasta-photo")
+        }
+        else{
+            document.getElementById("recipe-2-title").innerHTML = "Spaghetti and Meatballs"
+            document.getElementById("recipe-2-photo").setAttribute("src", "../images/spaghetti.png")
+            document.getElementById("recipe-2-photo").setAttribute("alt", "Spaghetti")
+            document.getElementById("recipe-2-photo").setAttribute("class", "spaghetti-photo")
+        }
 
         document.getElementById("recipe-3-title").innerHTML = "Baked Potato"
         document.getElementById("recipe-3-photo").setAttribute("src", "../images/baked_potato.png")
