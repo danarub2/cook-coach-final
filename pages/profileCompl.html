@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/profile-styles.css" />
+    <link rel="stylesheet" href="../stylesheets/dana_styles.css" />
+    <!-- Navbar style sheet is below -->
+    <link rel="stylesheet" href="../stylesheets/nav_bar.css">
+    <script src="../scripts/settings-page.js"></script>
+</head>
+
+<body onload="loadPage();">
+    <!-- Navbar starts here -->
+    <!-- Navbar for Completed first recipe -->
+    <div class="nav-wrapper">
+        <ul class="nav-bar">
+            <li class="nav-item">
+                <a class="nav-link" href="my_kitchenCompl.html">My Kitchen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="recipesCompl.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cookbook.html">My Cookbook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shopCompl.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="achievementsCompl.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="profileCompl.html"><img class="nav-icon" src="../images/user-icon.png"></img></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Navbar ends here -->
+
+    <!-- Empty Xpbar + coins starts here -->
+    <div class="bg-cc-grey comfortaa-font"style="margin-top: 0.5vw; margin-left: 1vw; border-radius: 10px; width: 97.5vw; height: 2vw; border: thin solid black">
+        <label style="float: right; margin-right: 1vw; margin-top: 0.25vw">0/500 XP</label>
+        <label style="float: right; margin-right: 2vw; margin-top: 0.25vw">Level 1</label>
+    </div>
+    <div style="margin-right: 1.5vw">
+        <img src = "../images/coin.png" alt="coin" id="coins" style="float: right; width: 25px; margin-top: 1vw; margin-left: 0.5vw"></img>
+        <label style="float: right; margin-top: 1vw">0</label>
+    </div>
+    <!-- Xpbar ends here -->
+
+    <div style="
+    flex: 1;
+    display: flex;
+    height: 100%;
+    background: #FFFFFF;">
+        <div style="
+        background: #FFFFFF;
+        margin: 7px;
+        margin-left: 0;
+        width: 30%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;">
+
+            <button class="editPic" onclick="changeSetting('profilePicture')">
+                <img src='../images/edit-logo.png' width='100%' alt="Edit Button"></img>
+            </button>
+
+            <div id="profilePic" style="margin-top: 20px;">
+                <img src='../images/user-icon.png' height="100%" width="70%" alt="Logo"></img>
+            </div>
+
+            <div id="userInfo">
+                <p1 style="font-size: 1.99vw; flex: 1;">
+                    Username: pixiegurl123
+                </p1>
+                <p1 style="font-size: 2vw; flex: 1;">
+                    Level 1
+                </p1>
+                <p1 style="font-size: 2vw; flex: '1';">
+                    Exp to Next Level: 500
+                </p1>
+                <p1 style="font-size: 2vw; flex: 1;">
+                    Coins: 0
+                </p1>
+            </div>
+
+            <div class="popupText" id="profilePicture">
+                <h1 class="popupTitle">Change Profile Picture</h1>
+                <span class="popupInstructions">Drop a file(JPG, PNG)</span>
+                <span class="or">or</span>
+
+                <div class="fileButton">
+                    <button class="chooseFileButton">Choose a file...</button>
+                </div>
+
+                <span class="exitButton">
+                    <button class="closeButton" onclick="closeSetting('profilePicture')">X</button>
+                </span>
+            </div>
+
+        </div>
+
+        <div style="margin: 10px;
+            flex: 2;
+            text-align: center;
+            display: block;">
+            <div class='tabsContainer' style="text-align: left;
+              display: flex;
+              height: 10%;
+              background: #FFFFFF">
+                <button class="settingsTab" onclick="openPage(event, 'settings')" id="defaultOpen" ;>
+                    Settings
+                </button>
+                <button class="settingsTab" onclick="openPage(event, 'preferences')" ;>
+                    Preferences
+                </button>
+            </div>
+
+            <div class="tabContent" id="preferences" style="background-color: #22a9bb7f;">
+                <div class="preferencesPage">
+                    <div class="allergiesCol">
+                        <h1 style="font-size: 3vw;
+                        margin: 5%">
+                            Allergies to Exclude
+                        </h1>
+                        <div style="background: #d3d3d3;
+                        border: 1px solid #000000;
+                        margin-left: 10%;
+                        width: 80%;
+                        border-radius: 15px;
+                        padding: 5%;
+                        padding-left: 0%;">
+                            <div class="allergies">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Eggs
+                                </label>
+                            </div>
+                            <div class="allergies">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Dairy
+                                </label>
+
+                            </div>
+                            <div class="allergies">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Peanuts
+                                </label>
+
+                            </div>
+                            <div class="allergies">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Shell Fish
+                                </label>
+
+                            </div>
+                            <div class="allergies">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Soy
+                                </label>
+
+                            </div>
+                            <div class="allergies">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Wheat
+                                </label>
+
+                            </div>
+                            <div class="allergies">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Tree Nuts
+                                </label>
+
+                            </div>
+                            <div class="allergies">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Fish
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filtersCol">
+                        <h1 style="font-size: 3vw;
+                        margin: 5%;">
+                            Other Filters
+                        </h1>
+                        <div style=" background: #d3d3d3;
+                      border: 1px solid #000000;
+                      margin-left: 10%;
+                      width: 80%;
+                      border-radius: 15px;
+                      padding: 5%;
+                      padding-left: 0%">
+                            <div class="filters">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Vegan
+                                </label>
+                            </div>
+                            <div class="filters">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Vegetarian
+                                </label>
+
+                            </div>
+                            <div class="filters">
+                                <input type="checkbox" />
+                                <label class="allergyCheckboxContainer">
+                                    Gluten Free
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="searchBar">
+                    <input type="text" id="searchField" placeholder="Search for more options" />
+                </div>
+            </div>
+
+            <div class="tabContent" id="settings" style="background-color: #22a9bb7f;">
+                <div style="display: block; width: 99%;">
+                    <div class='settingOption'>
+                        <div class='settingLabel'>
+                            Notifications:
+                        </div>
+                        <div class='settingSelect'>
+                            <label class="checkboxContainer">
+                                On
+                                <input type="checkbox" checked="checked" />
+                            </label>
+                            <label class="checkboxContainer">
+                                Off
+                                <input type="checkbox" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class='settingOption'>
+                        <div class='settingLabel'>
+                            SFX:
+                        </div>
+                        <div class="sliderContainer">
+                            <input type="range" min="1" max="100" class="slider" id="myRange" />
+                        </div>
+                    </div>
+
+                    <div class='settingOption'>
+                        <div class='settingLabel'>
+                            Voice Command:
+                        </div>
+                        <div class="settingSelect">
+                            <label class="checkboxContainer">
+                                On
+                                <input type="checkbox" />
+                            </label>
+                            <label class="checkboxContainer">
+                                Off
+                                <input type="checkbox" checked='checked' />
+                            </label>
+                        </div>
+                    </div>
+                    <div class='settingOption'>
+                        <div class='settingLabel'>
+                            Email Address:
+                        </div>
+                        <div class="settingSelect" style="display: 'flex';">
+                            pixiegurl123@gmail.com
+                            <!-- <div class='editSetting' style="margin-left: 30%;" onclick="changeSetting('">
+                                <img src='../images/edit-logo.png' width='100%' alt='Edit Button' />
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class='settingOption'>
+                        <div class='settingLabel'>
+                            Change Username:
+                        </div>
+                        <div class="settingSelect" style="display: flex;">
+                            pixiegurl123
+                            <button class='editSetting' style="margin-left: 60%;" onclick="changeSetting('username')">
+                                <img src='../images/edit-logo.png' width='100%' alt='Edit Button' />
+                            </button>
+                        </div>
+                    </div>
+                    <div class='settingOption'>
+                        <div class='settingLabel'>
+                            Change Password:
+                        </div>
+                        <div class="settingSelect" style="display: flex;">
+                            ****************
+                            <button class='editSetting' style="margin-left: 53%;" onclick="changeSetting('password')">
+                                <img src='../images/edit-logo.png' width='100%' alt='Edit Button' />
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="popupText" id="password">
+            <h1 class="popupTitle">Change Password</h1>
+            <span class="popupInstructions" style="margin-top: 15%;">Input new password:</span>
+            <div class='passwordField' style="top: 35%; margin-left: 15%; width: 70%;">
+                <input type="text" placeholder="Enter new password here" />
+            </div>
+
+            <span class="popupInstructions" style="margin-top: 35%;">Confirm new
+                password:</span>
+            <div class='passwordField' style="top: 60%; margin-left: 15%; width: 70%;">
+                <input type="password" placeholder="Retype new password here" />
+            </div>
+
+            <div>
+                <button class="confirmButton" onclick="closeSetting('password')" style="top: 75%; left: 50%; width: 40%;">Confirm</button>
+            </div>
+
+            <span class="exitButton">
+                <button class="closeButton" onclick="closeSetting('password')">X</button>
+            </span>
+        </div>
+
+        <div class="popupText" id="username">
+            <h1 class="popupTitle">Change Username</h1>
+            <span class="popupInstructions" style="margin-top: 20%;">Input new username:</span>
+            <div class='usernameField' style="width: 60%;">
+                <input type="text" placeholder="pixiegurl123" />
+            </div>
+
+            <div>
+                <button class="confirmButton" onclick="closeSetting('username')" style="top: 75%; left: 50%; width: 40%;">Confirm</button>
+            </div>
+
+            <span class="exitButton">
+                <button class="closeButton" onclick="closeSetting('username')">X</button>
+            </span>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
