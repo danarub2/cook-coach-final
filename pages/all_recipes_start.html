@@ -15,7 +15,7 @@
             <div class="nav-wrapper">
                 <ul class="nav-bar">
                     <li class="nav-item">
-                        <a class="nav-link" href="my_kitchen">My Kitchen</a>
+                        <a class="nav-link" href="my_kitchen.html">My Kitchen</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="recipes.html">Recipes</a>
@@ -39,23 +39,30 @@
                     <a href="recipes.html" style="text-decoration: none; color: black">My Progress Track</a>
                 </div>
                 <div class="col-6 text-center" style="padding: 0.75vw">
-                    <a href="all_recipes_start.html" style="text-decoration: none; color: black">All Recipes</a>
+                    <a href="all_recipes_start.html" style="text-decoration: underline; color: black">All Recipes</a>
                 </div>
             </div>
-            <div class="bg-cc-grey" style="margin-top: 2vw; margin-right: 2vw; margin-left: 4vw; border-radius: 10px; width: 90vw; height: 2vw; border: thin solid black">
+            <div class="bg-cc-grey"style="margin-top: 0.5vw; margin-left: 1vw; border-radius: 10px; width: 97.5vw; height: 2vw; border: thin solid black">
                 <label style="float: right; margin-right: 1vw; margin-top: 0.25vw">0/500 XP</label>
                 <label style="float: right; margin-right: 2vw; margin-top: 0.25vw">Level 1</label>
             </div>
-            <div style="margin-right: 6vw">
-                <img src="../images/coin.png" alt="coin" id="coins" style="float: right; width: 25px; margin-top: 1vw; margin-left: 0.5vw"></img>
+            <div style="margin-right: 1.5vw">
+                <img src = "../images/coin.png" alt="coin" id="coins" style="float: right; width: 25px; margin-top: 1vw; margin-left: 0.5vw"></img>
                 <label style="float: right; margin-top: 1vw">0</label>
             </div>
             <div class="form" style="margin-top: 3vw; margin-left: 4vw">
-                <input class="form-input" name="search" type="input" id="search" placeholder="Click to search" style="border-radius: 10px; border: thin solid black;  width: 90vw; height: 50px; padding: 10px"></input>
+                <input class="form-input" name="search" type="input" id="search" placeholder="Click to search" style="border-radius: 10px; border: thin solid black;  width: 90vw; height: 50px; padding: 10px" oninput="search()"></input>
             </div>
-            <div class="bg-cc-grey" style="border: thin solid black; width: 10vw; height: 2vw; margin-top: 2vw; margin-left: 4vw; border-radius: 10px; padding-left: 0.75vw; padding-top: 0.25vw" id="filter-plus-holder">
-                <label style="margin-right: 3.5vw">Filters</label>
-                <img src="../images/plus.png" alt="plus" id="plus" style="width: 30px; margin-top: -0.25vw" id="filter-plus-button" onclick="onOpenFilter()"></img>
+            <div class="row">
+                <div class="col-2">
+                    <div class="bg-cc-grey" style="border: thin solid black; width: 10vw; height: 2vw; margin-top: 2vw; margin-left: 4vw; border-radius: 10px; padding-left: 0.75vw; padding-top: 0.25vw" id="filter-plus-holder">
+                        <label style="margin-right: 3.5vw">Filters</label>
+                        <img src="../images/plus.png" alt="plus" id="plus" style="width: 30px; margin-top: -0.25vw" id="filter-plus-button" onclick="onOpenFilter()"></img>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="hidden" id="applied-filters-div">Test</div>
+                </div>
             </div>
 
             <div class="bg-cc-grey hidden" style="border: thin solid black; width: 60vw; margin-left: 4vw; border-radius: 10px; margin-top: 2vw" id="filter-options">
@@ -66,34 +73,34 @@
                         <div style="margin-left: 1vw">
                             <p>Time</p>
                             <div class="form-check">
-                                <input class="form-check-input" name="time" type="checkbox" id="time1"></input>
+                                <input class="form-check-input" name="time" type="checkbox" id="time1" onclick="addFilter('Under 15 minutes')"></input>
                                 <label style="margin-left: 0.5vw">Under 15 minutes</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="time" type="checkbox" id="time2"></input>
+                                <input class="form-check-input" name="time" type="checkbox" id="time2" onclick="addFilter('30 minutes')"></input>
                                 <label style="margin-left: 0.5vw">30 minutes</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="time" type="checkbox" id="time3"></input>
-                                <label style="margin-left: 0.5vw">1 hour +</label>
+                                <input class="form-check-input" name="time" type="checkbox" id="time3" onclick="addFilter('1 hour +')"></input>
+                                <label style="margin-left: 0.5vw">Over 1 hour</label>
                             </div>
                         </div>
                         <div style="margin-left: 1vw; margin-top: 1vw; margin-bottom: 1vw">
                             <p>Difficulty</p>
                             <div class="form-check">
-                                <input class="form-check-input" name="diff" type="checkbox" id="diff1"></input>
+                                <input class="form-check-input" name="diff" type="checkbox" id="diff1" onclick="addFilter('Easy')"></input>
                                 <label style="margin-left: 0.5vw">Easy</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="diff" type="checkbox" id="diff2"></input>
+                                <input class="form-check-input" name="diff" type="checkbox" id="diff2" onclick="addFilter('Medium')"></input>
                                 <label style="margin-left: 0.5vw">Medium</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="diff" type="checkbox" id="diff3"></input>
+                                <input class="form-check-input" name="diff" type="checkbox" id="diff3" onclick="addFilter('Hard')"></input>
                                 <label style="margin-left: 0.5vw">Hard</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="diff" type="checkbox" id="diff4"></input>
+                                <input class="form-check-input" name="diff" type="checkbox" id="diff4" onclick="addFilter('Expert')"></input>
                                 <label style="margin-left: 0.5vw">Expert</label>
                             </div>
                         </div>
@@ -103,41 +110,42 @@
                         <div style="margin-left: 1vw">
                             <p>Exclude</p>
                             <div class="form-check">
-                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy1"></input>
+                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy1" onclick="addFilter('My Allergies')"></input>
                                 <label style="margin-left: 0.5vw">My Allergies</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy2"></input>
+                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy2" onclick="addFilter('No Eggs')"></input>
                                 <label style="margin-left: 0.5vw">Eggs</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy3"></input>
+                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy3" onclick="addFilter('No Nuts')"></input>
                                 <label style="margin-left: 0.5vw">Nuts</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy4"></input>
+                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy4" onclick="addFilter('No Dairy')"></input>
                                 <label style="margin-left: 0.5vw">Dairy</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy5"></input>
+                                <input class="form-check-input" name="allergies" type="checkbox" id="allergy5" onclick="addFilter('No Shellfish')"></input>
                                 <label style="margin-left: 0.5vw">Shellfish</label>
                             </div>
                         </div>
                         <div style="margin-left: 1vw; margin-top: 1vw; margin-bottom: 1vw"}}>
                             <p>Speciality</p>
                             <div class="form-check">
-                                <input class="form-check-input" name="speciality" type="checkbox" id="speciality1"></input>
+                                <input class="form-check-input" name="speciality" type="checkbox" id="speciality1" onclick="addFilter('Vegetarian')"></input>
                                 <label style="margin-left: 0.5vw">Vegetarian</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="speciality" type="checkbox" id="speciality2"></input>
+                                <input class="form-check-input" name="speciality" type="checkbox" id="speciality2" onclick="addFilter('Vegan')"></input>
                                 <label style="margin-left: 0.5vw">Vegan</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" name="speciality" type="checkbox" id="speciality3"></input>
+                                <input class="form-check-input" name="speciality" type="checkbox" id="speciality3" onclick="addFilter('Gluten Free')"></input>
                                 <label style="margin-left: 0.5vw">Gluten Free</label>
                             </div>
                         </div>
+                        <button type="submit" id="apply-filter-button" class="btn bg-cc-blue black-border" style="width: 12vw; margin-bottom: 1vw" onclick="showFilters()">Apply Filters</button>
                     </div>
                 </div>
             </div>
@@ -152,7 +160,7 @@
                         </div>
                         <div class="col-5">
                             <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw">Chili</p>
+                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Chili</p>
                                 <p>Prep Time: 5 minutes</p>
                                 <p>Total Time: 30 minutes</p>
                                 <p>Difficulty: Easy</p>
@@ -169,7 +177,7 @@
                         </div>
                         <div class="col-5">
                             <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw">Steak Fajitas</p>
+                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Steak Fajitas</p>
                                 <p>Prep Time: 20 minutes</p>
                                 <p>Total Time: 1 hour</p>
                                 <p>Difficulty: Easy</p>
@@ -186,7 +194,7 @@
                         </div>
                         <div class="col-5">
                             <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw">Minestrone Soup</p>
+                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Minestrone Soup</p>
                                 <p>Prep Time: 5 minutes</p>
                                 <p>Total Time: 30 minutes</p>
                                 <p>Difficulty: Easy</p>
@@ -205,7 +213,7 @@
                         </div>
                         <div class="col-5">
                             <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw">Meatless Meatballs</p>
+                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Meatless Meatballs</p>
                                 <p>Prep Time: 10 minutes</p>
                                 <p>Total Time: 25 minutes</p>
                                 <p>Difficulty: Easy</p>
@@ -222,7 +230,7 @@
                         </div>
                         <div class="col-5">
                             <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw">Grilled Salmon</p>
+                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Grilled Salmon</p>
                                 <p>Prep Time: 45 minutes</p>
                                 <p>Total Time: 1 hour</p>
                                 <p>Difficulty: Medium</p>
@@ -239,7 +247,7 @@
                         </div>
                         <div class="col-5">
                             <div class="recipe-text" style="font-size: 0.8vw">
-                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw">Tofu Curry</p>
+                                <p style="font-weight: bold; font-size: 1vw; margin-bottom: 1vw" class="recipe-name">Tofu Curry</p>
                                 <p>Prep Time: 10 minutes</p>
                                 <p>Total Time: 25 minutes</p>
                                 <p>Difficulty: Medium</p>
