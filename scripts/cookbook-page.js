@@ -23,3 +23,7 @@ function editPhoto() {
 function closeSetting() {
     document.getElementById('pastaPicture').style.visibility = 'hidden';
 }
+
+function loadAfterFirstTime() {
+    document.getElementById("stopEdit").click();
+}
