@@ -7,9 +7,11 @@
         <link rel="stylesheet" href="../stylesheets/dana_styles.css" />
         <!-- Navbar style sheet is below -->
         <link rel="stylesheet" href="../stylesheets/nav_bar.css">
+        <link href="https://fonts.googleapis.com/css?family=Coming Soon" rel="stylesheet">
+
         <script src="../scripts/recipes.js"></script>
     </head>
-    <body class="comfortaa-font">
+    <body>
         <!-- Navbar starts here -->
     <!-- Navbar for new user -->
     <!-- Make sure to add nav_bar.css, and to make the link that show your current page have the class "active"-->
@@ -37,7 +39,7 @@
     </div>
     <!-- Navbar ends here -->
 
-        <div class="bg-cc-green row" style="font-size: 1.15vw">
+        <div class="bg-cc-green row comfortaa-font" style="font-size: 1.15vw">
             <div class="col-6 text-center" style="border-right: thin solid black; padding: 0.75vw">
                 <a href="recipes.html" style="text-decoration: underline; color: black">My Progress Track</a>
             </div>
@@ -56,14 +58,14 @@
             <label style="float: right; margin-top: 1vw">0</label>
         </div>
         <!-- Xpbar ends here -->
-        <div>
-            <img src="../images/cooky_transparent.png" alt="cooky" id="cooky-looking-right" style="margin-bottom: -5vw; margin-right: 1vw; width: 25vw"></img>
-            <div class="bubble bubble-bottom-left" style="margin-left: -10vw; margin-top: -2vw; padding-top: 3.5vw">Choose your first recipe!</div>
+        <div class="coming-soon-font">
+            <img src="../images/cooky_transparent.png" alt="cooky" id="cooky-looking-right" style="margin-bottom: -5vw; margin-right: 1vw; width: 25vw; margin-left: 3vw"></img>
+            <div class="bubble bubble-bottom-left coming-soon-font" style="margin-left: -10vw; margin-top: -2vw; padding-top: 3.5vw; font-size: 2vw">Choose your first recipe!</div>
         </div>
         <div>
-            <button type="submit" id="shuffle-button" class="btn bg-cc-blue black-border" style="width: 25vw" onclick="onShuffle(false)">Shuffle Recipes</button>
+            <button type="submit" id="shuffle-button" class="btn bg-cc-blue black-border comfortaa-font" style="width: 25vw" onclick="onShuffle(false)">Shuffle Recipes</button>
         </div>
-        <div id="recipes" class="text-center" style="margin-top: 1vw">
+        <div id="recipes" class="text-center comfortaa-font" style="margin-top: 1vw">
             <div id="recipe-options" class="row">
                 <div class="col-4 bg-cc-purple track-card" id="recipe-1-card">
                     <span id="recipe-1-title" class="recipe-title">Eggs and Bacon</span>

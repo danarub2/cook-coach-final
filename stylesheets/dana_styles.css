@@ -31,7 +31,11 @@
 }
 
 .comfortaa-font{
-    font-family: 'Comfortaa'
+    font-family: 'Comfortaa';
+}
+
+.coming-soon-font{
+    font-family: 'Coming Soon';
 }
 
 .slider-spacer{
@@ -146,7 +150,7 @@
 
 .bubble {
     position: relative;
-    font-family: sans-serif;
+    font-family: 'Coming Soon';
     font-size: 1.65vw;
     /*line-height: 24px;*/
     width: 30vw;

@@ -14,7 +14,7 @@
     <script src="../scripts/settings-page.js"></script>
 </head>
 
-<body onload="loadPage();">
+<body onload="loadPage();" class="comfortaa-font"> 
     <!-- Navbar starts here -->
     <!-- Navbar for new user -->
     <!-- Make sure to add nav_bar.css, and to make the link that show your current page have the class "active"-->
@@ -71,17 +71,17 @@
                 <img src='../images/user-icon.png' height="100%" width="70%" alt="Logo"></img>
             </div>
 
-            <div id="userInfo">
-                <p1 style="font-size: 1.99vw; flex: 1;">
+            <div id="userInfo" style="font-size: 1.5vw; margin-top: 5vw">
+                <p1 style ="flex: 1;">
                     Username: pixiegurl123
                 </p1>
-                <p1 style="font-size: 2vw; flex: 1;">
+                <p1 style=" flex: 1;">
                     Level 1
                 </p1>
-                <p1 style="font-size: 2vw; flex: '1';">
+                <p1 style="flex: '1';">
                     Exp to Next Level: 500
                 </p1>
-                <p1 style="font-size: 2vw; flex: 1;">
+                <p1 style=" flex: 1;">
                     Coins: 0
                 </p1>
             </div>
@@ -110,10 +110,10 @@
               display: flex;
               height: 10%;
               background: #FFFFFF">
-                <button class="settingsTab" onclick="openPage(event, 'preferences')" id="defaultOpen" ;>
+                <button class="settingsTab" onclick="openPage(event, 'preferences')" id="defaultOpen" ; style="font-size: 2vw">
                     Preferences
                 </button>
-                <button class="settingsTab" onclick="openPage(event, 'settings')" ;>
+                <button class="settingsTab" onclick="openPage(event, 'settings')" ; style="font-size: 2vw">
                     Settings
                 </button>
             </div>
@@ -121,13 +121,13 @@
             <div class="tabContent" id="preferences" style="background-color: #22a9bb7f;">
                 <div class="preferencesPage">
                     <div class="allergiesCol">
-                        <h1 style="font-size: 3vw;
-                        margin: 5%">
+                        <h1 style="font-size: 1.75vw;
+                        margin: 5%; margin-left: 17%">
                             Allergies to Exclude
                         </h1>
                         <div style="background: #d3d3d3;
                         border: 1px solid #000000;
-                        margin-left: 10%;
+                        margin-left: 17%;
                         width: 80%;
                         border-radius: 15px;
                         padding: 5%;
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                     <div class="filtersCol">
-                        <h1 style="font-size: 3vw;
+                        <h1 style="font-size: 1.75vw;
                         margin: 5%;">
                             Other Filters
                         </h1>
@@ -225,7 +225,7 @@
                     </div>
                 </div>
 
-                <div class="searchBar">
+                <div class="searchBar" style="margin-left: 5.5vw">
                     <input type="text" id="searchField" placeholder="Search for more options" />
                 </div>
             </div>

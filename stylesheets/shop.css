@@ -4,12 +4,10 @@
 }
 .imgbox {
     display: grid;
-    height: 100%;
-}
-.center-fit {
-    max-width: 100%;
-    max-height: 100vh;
-    margin: auto;
+    width: 75vw;
+    overflow: hidden;
+    margin-left: 15vw;
+    margin-bottom: 2vw;
 }
 
 .overlay {
@@ -19,5 +17,6 @@
     font-family: 'Comfortaa';
     transform: rotate(30deg); 
     height: 50px;
-    margin-top: -300px;
+    margin-top: -335px;
+    margin-left: 50px;
 }

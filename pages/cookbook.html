@@ -5,12 +5,16 @@
     <meta charset="utf-8" />
 
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Coming Soon" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../stylesheets/cookbook-styles.css" />
     <script src="../scripts/cookbook-page.js"></script>
     <!-- Navbar style sheet is below -->
     <link rel="stylesheet" href="../stylesheets/nav_bar.css">
+    <link rel="stylesheet" href="../stylesheets/dana_styles.css">
+
 </head>
     <!-- Navbar starts here -->
     <!-- Navbar for Completed first recipe -->
@@ -48,13 +52,13 @@
 <body>
     <div
         style="background-image: url(../images/cookbook-bg.JPG); background-repeat: no-repeat;  background-size: cover; height: 86vh;">
-        <h2 style="text-align: center; font-size: 5vw; position: absolute; top:30%; left: 50%; ">
+        <h2 class="coming-soon-font" style="text-align: center; font-size: 5vw; position: absolute; top:30%; left: 50%; margin-top: 3vw; margin-bottom: 4vw">
             My Cookbook
         </h2>
-        <div class="cookbookContent">
+        <div class="cookbookContent coming-soon-font" style="margin-top: 4vw">
             <div class="pastaRecord">
                 <div class="pastaImage" id="pastaImage">
-                    <img src='../images/pasta.png' alt='pasta' height='200vw' width='250vw' padding='2%' />
+                    <a href="startPasta.html"><img src='../images/pasta.png' alt='pasta' height='200vw' width='250vw' padding='2%' /></a>
                 </div>
                 <button id="editPhoto" onclick="editPhoto()">
                     <img src="../images/camera.png" alt="edit photo" height='180vw' width='180vw' padding='2%' />
@@ -66,11 +70,11 @@
                     <p1> Saved: March 4, 2022</p1>
                     <div class="pastaNotes">
                         <p1>Notes: </p1>
-                        <div class="notesContainer">
-                            <div id="pastaNoteText" style="margin-left: 1%; width: 100%;">
+                        <div class="notesContainer" style="margin-left: 0.5vw">
+                            <div id="pastaNoteText" stle="margin-top: 2vw; width: 100%;">
                                 Too much salt!
                             </div>
-                            <textarea id="pastaNotes" placeholder="Too much salt!">Too much salt!</textarea>
+                            <textarea id="pastaNotes" placeholder="Too much salt!" style="margin-left: 1vw; padding: 0.5vw">Too much salt!</textarea>
                         </div>
 
                     </div>

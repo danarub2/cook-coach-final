@@ -60,7 +60,7 @@ button.btn {
 
 .servings {
     width: 50px;
-    height: 40px;
+    height: 50px;
     text-align: center;
     padding-bottom: 50px;
 }
@@ -210,8 +210,8 @@ div.card {
 }
 
 div.points {
-    background-color: #22AABB; 
-    width: fit-content;
+    background-color: #22a9bbae; 
+    width: 20vw;
     padding: 10px;
 }
 div.ach {
@@ -246,4 +246,8 @@ button.back {
     position: absolute;
     top: 20px;
     left: 20px;
+}
+
+.smaller{
+    font-size: 3vw;
 }
